@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+p, .button{
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#cards{
+  
+  display: flex;
+  height: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card{
+  padding-bottom: 20px;
+  text-align: center;
+  height: 60%;
+  width: 18%;
+  color: #fafafa;
+  background-color: #ff3859;
+  border-radius: 10px;
+  box-shadow: 2px 0px 3px #030303;
+  perspective: 1000px; /* Define a perspectiva para criar o efeito de profundidade */
+  transition: transform 0.5s; /* Adiciona uma transição suave */
+}
+
+.card:hover {
+  transform: rotateY(360deg); /* Rotaciona o card quando o mouse passa sobre ele */
+}
+
+button{
+  text-align:center;
+  background-color: white;
+  color:#ff3859;
+  border-radius: 15px;
+  box-shadow: 2px 0px 3px #030303;
+  
+  
+}
+
+button:hover{
+  background-color: #ff3859;
+  color: white ;
+  cursor: pointer;
+}
+
+
+.card p{
+  text-align: justify;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+img{
+  height: 150px;
+  width: 60%;
+  border-radius: 100px;
+  box-shadow: 2px 0px 3px #030303;
+}
+
+.name{
+  font-size: 30px;
+  text-align: center;
+}
